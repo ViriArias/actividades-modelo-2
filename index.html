@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <style>
+        /* Estilos generales para el body */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título principal */
+        h1 {
+            color: #e91e63; /* Rosa */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Enlace para más actividades */
+        a.link {
+            display: inline-block;
+            background-color: #e91e63; /* Rosa */
+            color: white;
+            font-size: 20px;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        a.link:hover {
+            background-color: #c2185b; /* Rosa más oscuro */
+        }
+
+        /* Contenedor de actividades */
+        .activities {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Cuadro de actividades (colorido) */
+        .activity-box {
+            background-color: #ffccbc; /* Naranja claro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .activity-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Colores distintos para cada actividad */
+        .activity-box:nth-child(1) {
+            background-color: #ffeb3b; /* Amarillo */
+        }
+
+        .activity-box:nth-child(2) {
+            background-color: #8bc34a; /* Verde */
+            color: white;
+        }
+
+        .activity-box:nth-child(3) {
+            background-color: #2196f3; /* Azul */
+            color: white;
+        }
+
+        /* Media Queries para dispositivos pequeños */
+        @media (max-width: 768px) {
+            .activities {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .activities {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mis Actividades</h1>
+        
+        <!-- Enlace para ver más actividades -->
+        <a href="#" class="link">Ver Más Actividades</a>
+
+        <!-- Cuadros de actividades -->
+        <div class="activities">
+            <div class="activity-box">Actividad 1: Yoga</div>
+            <div class="activity-box">Actividad 2: Estudio de Matemáticas</div>
+            <div class="activity-box">Actividad 3: Paseo al Aire Libre</div>
+        </div>
+    </div>
+
+</body>
+</html>
